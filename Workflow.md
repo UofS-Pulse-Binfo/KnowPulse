@@ -1,11 +1,13 @@
 # Developer Workflow.
-This document described the workflow that the KnowPulse team follows for development.
+This document describes the workflow that the KnowPulse team follows for development.
 
 ## All Tasks, Bugs, Features, etc. should be GitHub Issues
  - Create an issue on github: Be Describtive
  - Label the issue (bug? enhancement?)
  - Using Boards indicate if this is a long term goal (icebox) or if you intend to do it right away (Up Next)
- - If you know who's going to work on this then assign it to them
+ - If you know who's going to work on this then assign it to them.
+ - Keep issues to reasonable amounts of work. A good rule of thumb is that if you think the issue would take more then a week of development time to complete then the scope of work is not reasonable for a single issue ;-). 
+ - Keep in mind, the smaller the issue the easier it is to review and the faster it will be released.
  
 ## Workflow
 1. Choose an issue to work on. Bugs should take priority. Look first at issues assigned to you.
@@ -39,3 +41,10 @@ This document described the workflow that the KnowPulse team follows for develop
  - Pull request is merged
  - Issue is closed
  - New issue is created to update module on KnowPulse
+
+## Review
+- When reviewing, look at both the code changes directly and test through the interface.
+- To see all the changes, click on "Files Changed" at the top of the pull request.
+- To start a code review, hover in front of the first line you would like to comment on then click the blue + icon that shows up. This opens a comment box where you can enter your suggestion/critique. Then click the green "Start review" button.
+  - Continue adding comments throughout the changes in this manner.
+- For interface functionality or design critique/suggestions, enter a comment (preferrably with screenshot) in the "Conversation" tab of the pull request.
