@@ -38,6 +38,7 @@ This document describes the workflow that the KnowPulse team follows for develop
   - If no, then go back to step 4.
     - Make sure to address all concerns. 
     - If you are uncertain their approach is the best one, then **defend yours**. Ask for clarification on any suggestions if necessary.
+    - Keep in mind, you do not need to create a new pull request after addressing concerns. The pull request will automatically update as you make changes to the branch created in step 3. That is why you are doing this work in a issue-specific branch.
   - If yes, then move onto step 8
 8. Close the issue
    - Done by lead Reviewer (Once all issues/suggestions are addressed)
