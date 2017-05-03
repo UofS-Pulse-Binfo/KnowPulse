@@ -22,8 +22,11 @@ This document describes the workflow that the KnowPulse team follows for develop
    - Also, try to to keep a record of design decisions and approach to solving the issue by commenting on the issue itself. The more context that you provide, the less you will have to explain to your co-workers during review ;-)
 5. Once work is complete, signal a Review
    - Create a pull request between your branch and the master branch
-   - Link the pull request to the issue
-   - Describe how to test your code: what pages to look at, etc.
+     1. On the GitHub repository page, click on the "Pull Requests" tab and click the "New Pull Request" button.
+     2. Leave `base:master`; change `compare:master` to point to your branch created in step 3.
+     3. The page immediatly shows the changes between your branch and master. Create the pull request by clicking the "Create Pull Request" button.
+     4. Link the pull request to the issue
+     5. Describe how to test your code: what pages to look at, etc.
    - Assign all team members to the pull request
    - In Boards, move the issue to the "Review" pane
 6. Review
