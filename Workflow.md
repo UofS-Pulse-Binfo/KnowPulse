@@ -26,7 +26,7 @@ This document describes the workflow that the KnowPulse team follows for develop
      2. Leave `base:master`; change `compare:master` to point to your branch created in step 3.
      3. The page immediatly shows the changes between your branch and master. Create the pull request by clicking the "Create Pull Request" button.
      4. Link the pull request to the issue
-     5. Describe how to test your code: what pages to look at, etc.
+     5. Describe the original issue, how you fixed it and how to test your code: what pages to look at, etc.
    - Request all team members review the pull request
    - In Boards, move the issue to the "Review" pane
 6. Review
