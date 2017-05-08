@@ -51,4 +51,9 @@ This document describes the workflow that the KnowPulse team follows for develop
   1. To see all the changes, click on "Files Changed" at the top of the pull request.
   2. To start a code review, hover in front of the first line you would like to comment on then click the blue + icon that shows up. This opens a comment box where you can enter your suggestion/critique. Then click the green "Start review" button.
   3. Continue adding comments throughout the changes in this manner.
+- If you don't actually have code review comments to make, you can submit your review by:
+  1. Click on "Files Changed" at the top of the pull request.
+  2. Click on "Review Changes" button at the top right of the page.
+  3. In the resulting popup, enter your comments and select whether you approve or request changes. 
+- If you simply need clarification, just comment on the pull request with your questions and hold off reviewing.
 - For interface functionality or design critique/suggestions, enter a comment (preferrably with screenshot) in the "Conversation" tab of the pull request.
