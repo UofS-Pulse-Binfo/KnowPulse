@@ -42,9 +42,18 @@ This document describes the workflow that the KnowPulse team follows for develop
   - If yes, then move onto step 8
 8. Close the issue
    - Done by lead Reviewer (Once all issues/suggestions are addressed)
+   - Lead Reviewer is (1) Lacey or (2) the person who did the review if Lacey is gone.
    - Pull request is merged into the master branch
+     1. Click "Conversation" tab at the top of the pull request
+     2. Scroll down, click "Merge pull request" assuming there are no conflicts with the base branch. If there are conflicts then those should be fixed by the person who submitted the pull request.
+     3. After you will see "Pull request successfully merged and closed" with a "Delete Branch" button. Click "Delete Branch".
    - Issue is closed
+     1. The issue should be referenced in the original description of the pull request -go to it.
+     2. Click "Close Issue".
    - New issue is created to update module on KnowPulse
+     1. Go to https://github.com/UofS-Pulse-Binfo/KnowPulse
+     2. Create an issue specifing that module XXX has received either new features or bug fixes and needs to be updated. Reference the issue linked to the pull request by entering [organization]/[repo]#[issue number] (e.g. UofS-Pulse-Binfo/tripal_daemon#3)
+     3. Assign this issue to whomever is in charge of updating KnowPulse (e.g. Lacey).
 
 ## Review
 - When reviewing, look at the code changes directly _and_ test through the interface.
