@@ -18,10 +18,11 @@
 - chado.publication (full table)
   - Publication
 - chado.feature table (seperated using feature.type_id)
-  - Chromosome
-  - Contig
+  - Chromosome (SO:pseudomolecule)
+  - Contig (SO:contig)
   - Variant
-  - Genetic Marker 
+  - Genetic Marker  (SO:genetic_marker)
+  - QTL (SO:heritable_phenotypic_marker)
 - chado.stock (seperated using stock.type_id)
   - Germplasm Accession
   - Breeding Cross
@@ -29,9 +30,8 @@
   - Recombinant Imbred Line;
 - chado.cvterm (specific cv_id)
   - Phenotypic Trait
-- Genetic Map
-- QTL
-
+- chado.featuremap (full table) 
+  - Genetic Map
 
 # Tripal Content Types: General
 
