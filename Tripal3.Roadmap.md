@@ -31,7 +31,7 @@
 - chado.cvterm (specific cv_id)
   - Phenotypic Trait (Trait Ontology; plant trait)
 - chado.featuremap (full table) 
-  - Genetic Map
+  - Genetic Map (data onotology; Map)
 
 # Tripal Content Types: General
 
