@@ -16,7 +16,7 @@
   - Genotype Experiment
   - Genome Assembly (Sequence Ontology; genome)
 - chado.publication (full table)
-  - Publication
+  - Publication (TPUB; Publication)
 - chado.feature table (seperated using feature.type_id)
   - Chromosome (Sequence Ontology; pseudomolecule)
   - Contig (Sequence Ontology; contig)
