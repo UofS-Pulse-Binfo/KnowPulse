@@ -14,22 +14,22 @@
   - Research Project
   - Phenotype Experiment
   - Genotype Experiment
-  - Genome Assembly
+  - Genome Assembly (SO; genome)
 - chado.publication (full table)
   - Publication
 - chado.feature table (seperated using feature.type_id)
-  - Chromosome (SO:pseudomolecule)
-  - Contig (SO:contig)
-  - Variant
-  - Genetic Marker  (SO:genetic_marker)
-  - QTL (SO:heritable_phenotypic_marker)
+  - Chromosome (SO; pseudomolecule)
+  - Contig (SO; contig)
+  - Variant (SO; sequence_variant)
+  - Genetic Marker  (SO; genetic_marker)
+  - QTL (SO; QTL)
 - chado.stock (seperated using stock.type_id)
-  - Germplasm Accession
-  - Breeding Cross
+  - Germplasm Accession (Crop ontology: Accession)
+  - Breeding Cross (Crop ontology: generated germplasm?)
   - Registered Varieties
   - Recombinant Imbred Line;
 - chado.cvterm (specific cv_id)
-  - Phenotypic Trait
+  - Phenotypic Trait (Trait Ontology; plant trait)
 - chado.featuremap (full table) 
   - Genetic Map
 
