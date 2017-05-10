@@ -10,10 +10,8 @@
   - Wild Species
   - Related Species
 - chado.project table (seperated using projectprop)
-  - Research Area
-  - Research Project
-  - Phenotype Experiment
-  - Genotype Experiment
+  - Research Project (semantic science ontology; study; SIO:001066)
+  - Research Experiment (semantic science ontology; experiment; SIO:000994)
   - Genome Assembly (Sequence Ontology; genome)
 - chado.publication (full table)
   - Publication (TPUB; Publication)
