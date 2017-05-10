@@ -4,6 +4,35 @@
 - The following plans will not all be implemented in the first release of KnowPulse on Tripal3 but instead represent the complete picture of our current plans
 - Please note that the move from Tripal2 to Tripal3 represents a switch from chado-based content types to ontology-based content types. As such one content type in Tripal2 will become multiple specialized content types in Tripal3.
 
+# Tripal Content Types
+- chado.organism table (seperated using organismprop)
+  - Crop
+  - Wild Species
+  - Related Species
+- chado.project table (seperated using projectprop)
+  - Research Area
+  - Research Project
+  - Phenotype Experiment
+  - Genotype Experiment
+  - Genome Assembly
+- chado.publication (full table)
+  - Publication
+- chado.feature table (seperated using feature.type_id)
+  - Chromosome
+  - Contig
+  - Variant
+  - Genetic Marker 
+- chado.stock (seperated using stock.type_id)
+  - Germplasm Accession
+  - Breeding Cross
+  - Registered Varieties
+  - Recombinant Imbred Line;
+- chado.cvterm (specific cv_id)
+  - Phenotypic Trait
+- Genetic Map
+- QTL
+
+
 # Tripal Content Types: General
 
 ## Species (Organism)
