@@ -108,7 +108,7 @@ These are currently customized stock pages managed by the Tripal Germplasm modul
 ### Phenotypes Pane
 - List the value for a set of CORE phenotypes (e.g. seed coat, cotyledon color). Make the set configurable at the field level. Should it be entereable on the form? How do we handle multiple experiments, siteyears for a single trait/variety combo.
 
-Cultivated Variety
+## Cultivated Variety
 These are currently customized stock pages managed by the Tripal Germplasm module. Stored in the Chado Stock table broken out by type_id. See https://www.crop-diversity.org/mgis/accession/01BEL084245 
 ### SAME AS ACCESSION
 - Overview will indicate specific variety information and include the abstract and link to the registration publication if known.
@@ -131,6 +131,9 @@ These are currently customized stock pages managed by the Tripal Germplasm modul
 - Indicates the parents of the RIL including their species.
 - Development timeline including which years & how many individuals
 - If the RIL is complete, indicate that and the final number of individuals.
+### RIL Genotypes Pane
+- Links to the VCF Filter form for the current RIL to facillitate downloading of the data.
+- Field Provided by VCF Filter.
 
 # Field Types
 The following section described common field types. 
