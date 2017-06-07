@@ -66,3 +66,7 @@ This document describes the workflow that the KnowPulse team follows for develop
   3. In the resulting popup, enter your comments and select whether you approve or request changes. 
 - If you simply need clarification, just comment on the pull request with your questions and hold off reviewing.
 - For interface functionality or design critique/suggestions, enter a comment (preferrably with screenshot) in the "Conversation" tab of the pull request.
+- You may need to checkout the branch on a development site to adequetaly test the code. 
+  1. `git fetch origin` will fetch all branches from that repository
+  2. `git checkout -b [branch] origin/[branch]` will pull the code from the branch which you want to test
+  3. Once you've finished testing, you can revert to the master branch with `git checkout master`
