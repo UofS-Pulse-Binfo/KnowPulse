@@ -38,10 +38,13 @@ This list should be ever expanding. Feel free to document the specifics under ea
 1. Backup the production site to your home directory
      - `pg_dump kp_live --user *** --host thunder > ~/kp_live.2017Aug18.sql`
 2. Remove the existing Clone. This should be safe since no one is supposed to develop on the clone. That said, it wouldn't hurt to tell your collegues that you're about to delete everything on the clone ;-)
-     - Specifically, remove the dev/fresh directory entirely and drop kp_clone on thunder.
+     - `sudo rm -R dev/fresh`
+     - `psql kp3_live --user *** --host thunder --command "DROP DATABASE kp_clone"`
 3. Re-create the clone database and restore the production site backup to it.
      - `psql kp3_live --user *** --host thunder --command "CREATE DATABASE kp_clone WITH OWNER ***"`
      - `psql kp_clone --user *** --host thunder < ~/kp_live.2017Aug18.sql`
 4. Copy the production site files to dev/fresh.
+     - `sudo cp -R ../portal fresh`
+     - `sudo chown -R lacey-local:www-dev fresh/`
 5. **Change the database in the dev/fresh/sites/default/settings.php from kp_live to kp_clone**. 
      - You need to use sudo to change this file.
