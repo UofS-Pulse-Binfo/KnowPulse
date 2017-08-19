@@ -21,7 +21,9 @@ This list should be ever expanding. Feel free to document the specifics under ea
    - Make sure to turn on/off tracks, navigate side to side and search.
 - Views Search: http://knowpulse.usask.ca/portal/search/variants
    - Check multiple combinations of filters (e.g. genus:Lens, type:SNP, name:p390).
-   - If you get no results, you likely need to re-apply the Tripal Views patch.
+   - If you get no results and see a green message as follows, you likely need to re-apply the Tripal Views patch.
+   > Exception in KP Variant Search[kp_variant_search]: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation &quot;feature&quot; does not exist
+   > LINE 5: feature feature 
    - To apply views patch, navigate to views module directory and execute `git apply ../tripal/tripal_views/views-sql-compliant-three-tier-naming-1971160-30.patch`
 - Feature Page: http://knowpulse.usask.ca/portal/feature/lens-culinaris/SNP/LcC00002p390
    - Check the genotypes & sequence panes especially.
