@@ -30,6 +30,8 @@
   - Phenotypic Trait (Trait Ontology; plant trait)
 - chado.featuremap (full table) 
   - Genetic Map (data onotology; Map)
+  
+ADD STOCK COLLECTIONS (i.e. diversity panels)
 
 # Tripal Content Types: General
 
@@ -70,6 +72,9 @@ Currently just a regular old project page. Stored in the Chado Project table. Ne
 - Genotypes Search: Redirects to the genotype matrix pre-filtered for the current project. Provides form elements to further restrict the matrix.
 ### Phenotype Data
 - Barchart or infographic summarizing the siteyears, traits and germplasm phenotyped for this project.
+### Germplasm
+- List the germplasm associated with this project with download. It might be a long list so make it searchable. Also, we should support stock collections which would then be listed at the top. For example, AGILE is using the Lentil Diversity Panel so it would be nice to say that at the top so users know it's not a random list ;-).
+- We also need a way to add germplasm to a project through the form so keep in mind this one will need a form element.
 
 ## Publication
 Stored in the Chado Publication table.
