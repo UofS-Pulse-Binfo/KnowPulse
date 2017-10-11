@@ -31,7 +31,7 @@ shareURL=function(browser){ return 'http://knowpulse.usask.ca/portal/[Instance P
 ```
 Notice the `[Instance Path]` in the URL above; this should be changed to the path selected in step 4. Use existing `jbrowse.conf` as an example for other configuration changes.
 4. Register the JBrowse with KnowPulse by creating a "JBrowse Instance". Go to Admin Toolbar > Content > Add Content > JBrowse Instance and fill in the requested information. Also, change the "URL path settings" to provide an alias for the JBrowse page. Conventions are as follows:
-   - Cultivated crops, current version: "[Common Name]"
-   - Cultivated crops, archived version: "[Common Name]/[version]"
-   - Wild Species, current version: "[Genus species]"
-   - Wild Species, archived version: "[Genus species]/[version]"
+   - Cultivated crops, current version: `[Common Name]`
+   - Cultivated crops, archived version: `[Common Name]/[version]`
+   - Wild Species, current version: `[Genus species]`
+   - Wild Species, archived version: `[Genus species]/[version]`
