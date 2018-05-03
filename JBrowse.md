@@ -1,45 +1,33 @@
 ## Customization
 We have changed the colours of our JBrowse to make it match KnowPulse for more seamless integration. 
-The following diff's show the changes that have been made (line numbers refer to v1.12.0):
+The following shows our customizations:
 
-### main.css
-```diff
-226c226
-<     border-bottom-color: #17313E;
----
->     border-bottom-color: #A9C6EB;
-234c234
-<     border: 2px solid #17313E;
----
->     border: 2px solid red;
-```
+```css
+/* Change the color of the upper trapezoid */
+#GenomeBrowser.jbrowse div.locationTrap {
+  border-bottom-color: #17313E
+}
+#GenomeBrowser.jbrowse div.locationThumb {
+  border: 2px solid #17313E;
+}
 
-### menubar.css
-```diff
-7,8c7
-<     background-color: #132A37;
-<     background: url('http://knowpulse.usask.ca/portal/sites/all/themes/kptheme/images/mainbarbg.jpg') repeat-x;
----
->     background: #396494;
-```
+/* Change the color/Background of the top menu bar */
+#GenomeBrowser.jbrowse .menuBar {
+    background: url('http://knowpulse.usask.ca/portal/sites/all/themes/kptheme/images/mainbarbg.jpg') repeat-x;
+    text-align: right;
+}
 
-### track_styles.css
-```diff
-120c120
-<     height: 1px;
----
->     height: 7px;
-125c125
-<     background-color: #4C4C4C;
----
->     background-color: #62d335;
-446,447c446,450
-<     height: 10px;
-<     background-color: #00FF00;
----
->     height: 4px;
->     background-color: #66B;
->     border-style: solid;
->     border-color: #88D;
->     border-width: 2px 0px 2px 0px;
+/** Customize HTML Features */
+#GenomeBrowser.jbrowse .feature2,
+  #GenomeBrowser.jbrowse .plus-feature2,
+  #GenomeBrowser.jbrowse .minus-feature2 {
+    height: 7px;
+    background-color: #62d335;
+}
+#GenomeBrowser.jbrowse .match_part,
+  #GenomeBrowser.jbrowse .plus-match_part,
+  #GenomeBrowser.jbrowse .minus-match_part {
+    height: 10px;
+    background-color: #00FF00;
+}
 ```
