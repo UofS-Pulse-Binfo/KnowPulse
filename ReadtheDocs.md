@@ -3,7 +3,14 @@ Documentation for our generic modules should be written in [**Restructured Text*
 For minor changes, you can simply [Edit the file using the Github editor](https://help.github.com/articles/editing-files-in-your-repository/), which will allow you to make a Pull Request.  Once approved, your changes will be reflected in the documentation automatically! 
 
 ## Install Sphinx
-For minor changes, you don't need to build the documentation!  If you want to see how your changes will look on the built site, however, you will need Sphinx installed.
+For minor changes, you don't need to build the documentation!  If you want to see how your changes will look on the built site, however, you will need Sphinx installed.Sphinx packages are published on the Python Package Index. The preferred tool for installing packages from PyPI is pip. This tool is provided with all modern versions of Python.
+
+On Linux or MacOS, you should open your terminal and run the following command.
+```bash
+$ pip install -U sphinx
+```
+
+After installation, type `sphinx-build --version` on the command prompt. If everything worked fine, you will see the version number for the Sphinx package you just installed.
 
 For more information, please see the Sphinx setup guide:
 http://www.sphinx-doc.org/en/master/usage/quickstart.html
