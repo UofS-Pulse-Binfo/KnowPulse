@@ -59,3 +59,23 @@ as this one will be hidden unless the main section is already selected.
 ```
 
 For more information on syntax, see [this RestructuredText Primer](http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html).
+
+Starting Docs for a new Module
+------------------------------
+
+1. Install sphinx using pip and navigate yourself into git directory. 
+2. Create a `docs` folder there and go inside. Run `sphinx-quickstart` and set to your needs. Simply accept the defaults except for:
+```
+The project name will occur in several places in the built documentation.
+> Project name: Genotypes Loader
+> Author name(s): Carolyn T Caron et al., University of Saskatchewan, Pulse Bioinformatics
+> Project release []: 
+```
+3. Create one .rst document per planned section and populate it accoding to the guidelines above. If a given section is long enough to be broken up into sub-sections then create a folder with the same name as [your section].rst and place all .rst files for that section within it.
+4. For each .rst file, ensure it is added to the `toctree` for that section. The base sections should be added to the index.rst
+5. Edit the index.rst: change the title  to `[My Module]: Available Documentation` and remove the `Indices and Tables` section.
+6. Ensure your conf.py matches the one provided here. by comparing each section. Do not change your `project information` and pay special attention to `PHP Highlighting` and `Options for HTML output`.
+7. Copy `_static` from this repo to your `docs` folder. This contains the UofS-Pulse-Binfo theme alterations.
+8. Build your documentation using `make html` and check `_build/html/index.html` to ensure your documentation looks as it should.
+9. Add ``_build/`` to your ``.gitignore`` file and commit your changes pushing them out to github.
+10. Go to https://readthedocs.org/dashboard/ and add this module as a project.
