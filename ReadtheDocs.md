@@ -58,3 +58,4 @@ The use of appropriate sections makes reading documentation and later specific d
 as this one will be hidden unless the main section is already selected.
 ```
 
+For more information on syntax, see [this RestructuredText Primer](http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html).
