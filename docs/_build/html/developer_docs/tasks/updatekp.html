@@ -1,0 +1,383 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Update KnowPulse &mdash; KnowPulse  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Add new Genome Build to KP" href="new_genome.html" />
+    <link rel="prev" title="Task-based Tutorials" href="../tasks.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> KnowPulse
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../developer_docs.html">KnowPulse Developer Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../dev_workflow.html">Developer Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_types.html">KnowPulse Content Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../field_types.html">KnowPulse Field Types</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../tasks.html">Task-based Tutorials</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Update KnowPulse</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pages-to-be-checked">Pages To Be Checked</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-a-clone-of-kp">Create a Clone of KP</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="new_genome.html">Add new Genome Build to KP</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../rtd.html">ReadtheDocs Guide</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">KnowPulse</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../developer_docs.html">KnowPulse Developer Documentation</a> &raquo;</li>
+        
+          <li><a href="../tasks.html">Task-based Tutorials</a> &raquo;</li>
+        
+      <li>Update KnowPulse</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/developer_docs/tasks/updatekp.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="update-knowpulse">
+<h1>Update KnowPulse<a class="headerlink" href="#update-knowpulse" title="Permalink to this headline">¶</a></h1>
+<p>The following documentation outlines the steps and testing that should be done when updating KnowPulse, whether it be simply updating a custom module or updating Drupal itself. Updating between major versions (e.g. Drupal 7 =&gt; 8 or Tripal 2 =&gt; 3) is beyond the scope of this document.</p>
+<p>The following are the basic steps to be taken. There is more information below if needed.</p>
+<ol class="arabic">
+<li><p class="first">Create a fresh clone (Dev Fresh) of the production site</p>
+</li>
+<li><p class="first">Upgrade the clone.</p>
+<blockquote>
+<div><ul class="simple">
+<li>In the directory for the site, execute <cite>drush up</cite>. This will tell you what modules need to be updated and prompt you to do so. Remember, if you don’t have permission on the directory you will need to use sudo.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Test the upgrade by checking the pages listed under “To be Checked” below.</p>
+</li>
+<li><p class="first">If there are no errors (check the current page, the recent log messages and the apache error log) then upgrade the production site using the same steps.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Recent Log Messages: <a class="reference external" href="http://knowpulse.usask.ca/portal/admin/reports/dblog">http://knowpulse.usask.ca/portal/admin/reports/dblog</a></li>
+<li>Apache Error Log: /var/log/apache2/error.log (requires sudo).</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Check the pages listed under “To be Checked” on the production site as well.</p>
+</li>
+</ol>
+<div class="section" id="pages-to-be-checked">
+<h2>Pages To Be Checked<a class="headerlink" href="#pages-to-be-checked" title="Permalink to this headline">¶</a></h2>
+<p>This list should be ever expanding. Feel free to document the specifics under each page.</p>
+<ul>
+<li><p class="first">Home Page: <a class="reference external" href="http://knowpulse.usask.ca/">http://knowpulse.usask.ca/</a></p>
+</li>
+<li><p class="first">BLAST: <a class="reference external" href="http://knowpulse.usask.ca/portal/blast/nucleotide/nucleotide">http://knowpulse.usask.ca/portal/blast/nucleotide/nucleotide</a></p>
+<blockquote>
+<div><ul class="simple">
+<li>You should actually execute an example blast to ensure that the functionality works.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">JBrowse: <a class="reference external" href="http://knowpulse.usask.ca/portal/jbrowse/Lentil">http://knowpulse.usask.ca/portal/jbrowse/Lentil</a></p>
+<blockquote>
+<div><ul class="simple">
+<li>Ensure you have your cache killer turned on!</li>
+<li>Make sure to turn on/off tracks, navigate side to side and search.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Views Search: <a class="reference external" href="http://knowpulse.usask.ca/portal/search/variants">http://knowpulse.usask.ca/portal/search/variants</a></p>
+<blockquote>
+<div><ul class="simple">
+<li>Check multiple combinations of filters (e.g. genus:Lens, type:SNP, name:p390).</li>
+<li>If you get no results and see a green message as follows, you likely need to re-apply the Tripal Views patch.</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">&gt; Exception in KP Variant Search[kp_variant_search]: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation &amp;quot;feature&amp;quot; does not exist
+&gt; LINE 5: feature feature</p>
+</div>
+<ul class="simple">
+<li>To apply views patch, navigate to views module directory and execute <cite>git apply ../tripal/tripal_views/views-sql-compliant-three-tier-naming-1971160-30.patch</cite></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Feature Page: <a class="reference external" href="http://knowpulse.usask.ca/portal/feature/lens-culinaris/SNP/LcC00002p390">http://knowpulse.usask.ca/portal/feature/lens-culinaris/SNP/LcC00002p390</a></p>
+<blockquote>
+<div><ul class="simple">
+<li>Check the genotypes &amp; sequence panes especially.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Raw Phenotypes</p>
+<blockquote>
+<div><ul class="simple">
+<li>Chart: <a class="reference external" href="http://knowpulse.usask.ca/portal/phenotypes/raw">http://knowpulse.usask.ca/portal/phenotypes/raw</a></li>
+<li>Backup: <a class="reference external" href="http://knowpulse.usask.ca/portal/phenotypes/raw/backup">http://knowpulse.usask.ca/portal/phenotypes/raw/backup</a></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Germplasm: <a class="reference external" href="http://knowpulse.usask.ca/portal/stock/Lens/culinaris/Variety/KP%3AGERM58">http://knowpulse.usask.ca/portal/stock/Lens/culinaris/Variety/KP%3AGERM58</a></p>
+<blockquote>
+<div><ul class="simple">
+<li>Check that you can collapse nodes &amp; follow links on the pedigree</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Research Category: <a class="reference external" href="http://knowpulse.usask.ca/portal/node/21">http://knowpulse.usask.ca/portal/node/21</a></p>
+<blockquote>
+<div><ul class="simple">
+<li>Check that there are projects listed &amp; pager works.</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="create-a-clone-of-kp">
+<h2>Create a Clone of KP<a class="headerlink" href="#create-a-clone-of-kp" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Replace <code class="docutils literal notranslate"><span class="pre">***</span></code> with the name of the database user in all the commands below.</p>
+</div>
+<ol class="arabic simple">
+<li><dl class="first docutils">
+<dt>Backup the production site to your home directory</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal notranslate"><span class="pre">pg_dump</span> <span class="pre">kp3_live</span> <span class="pre">--user</span> <span class="pre">***</span> <span class="pre">--host</span> <span class="pre">thunder</span> <span class="pre">&gt;</span> <span class="pre">~/kp_live.2017Aug18.sql</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Remove the existing Clone. This should be safe since no one is supposed to develop on the clone. That said, it wouldn’t hurt to tell your collegues that you’re about to delete everything on the clone ;-)</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">rm</span> <span class="pre">-R</span> <span class="pre">dev/fresh</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">psql</span> <span class="pre">--user</span> <span class="pre">***</span> <span class="pre">--host</span> <span class="pre">thunder</span> <span class="pre">--command</span> <span class="pre">&quot;DROP</span> <span class="pre">DATABASE</span> <span class="pre">kp3_fresh&quot;</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Re-create the clone database and restore the production site backup to it.</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal notranslate"><span class="pre">psql</span> <span class="pre">--user</span> <span class="pre">***</span> <span class="pre">--host</span> <span class="pre">thunder</span> <span class="pre">--command</span> <span class="pre">&quot;CREATE</span> <span class="pre">DATABASE</span> <span class="pre">kp3_fresh</span> <span class="pre">WITH</span> <span class="pre">OWNER</span> <span class="pre">***&quot;</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">psql</span> <span class="pre">kp3_fresh</span> <span class="pre">--user</span> <span class="pre">***</span> <span class="pre">--host</span> <span class="pre">thunder</span> <span class="pre">&lt;</span> <span class="pre">~/kp_live.2017Aug18.sql</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Copy the production site files to dev/fresh.</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">cp</span> <span class="pre">-R</span> <span class="pre">../portal</span> <span class="pre">fresh</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">chown</span> <span class="pre">-R</span> <span class="pre">lacey-local:www-dev</span> <span class="pre">fresh/</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Change the database in the dev/fresh/sites/default/settings.php from kp3_live to kp3_fresh.</dt>
+<dd><ul class="first last">
+<li>You need to use sudo to change this file.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="new_genome.html" class="btn btn-neutral float-right" title="Add new Genome Build to KP" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../tasks.html" class="btn btn-neutral" title="Task-based Tutorials" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, LA Sanderson, CT Caron, R Tan, Y Shen, KE Bett (University of Saskatchewan, Pulse Bioinformatics).
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
