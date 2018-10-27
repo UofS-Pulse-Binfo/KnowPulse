@@ -23,7 +23,8 @@ Genotypic Data
 ---------------
 
 - pie chart summarizing the known alleles
-- genotype look-up field: mini genotype matrix for a single variant. Germplasm are the rows.
+- Genotype look-up field: mini genotype matrix for a single variant. Germplasm are the rows.
+- Genotypes Matrix Link: Redirects to the genotype matrix pre-filtered for the current marker.
 
 Sequence
 ---------
