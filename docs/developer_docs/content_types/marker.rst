@@ -11,37 +11,37 @@ Overview
     - Name
     - Marker technology
     - Species
-    - Gene name and location in gene (if within gene) 
-    - any additional meta-data helpful for running the marker (e.g. primers)
+    - ``@todo`` Gene name and location in gene (if within gene) 
+    - ``@todo`` any additional meta-data helpful for running the marker (e.g. primers)
 
 Marker Locations
 ------------------
 
-- marker locations by assembly
+- marker locations by assembly (``@todo`` not yet by assembly)
 
 Genotypic Data
 ---------------
 
 - pie chart summarizing the known alleles
-- Genotype look-up field: mini genotype matrix for a single variant. Germplasm are the rows.
-- Genotypes Matrix Link: Redirects to the genotype matrix pre-filtered for the current marker.
+- ``@todo`` Genotype look-up field: mini genotype matrix for a single variant. Germplasm are the rows.
+- ``@todo`` Genotypes Matrix Link: Redirects to the genotype matrix pre-filtered for the current marker.
 
 Sequence
 ---------
 
-- Variant Marked-up Sequence (FASTA format) -state assembly? for all locations
+- Variant Marked-up Sequence (FASTA format) (``@todo`` -state assembly?) for all locations
 
 Genome View
 ------------
 
-- JBrowse field located on this marker
+- ``@todo`` JBrowse field located on this marker
 
 Genetic Maps
 ----------------
 
-- List all the genetic maps containing this marker
+- ``@todo`` List all the genetic maps containing this marker
 
 QTL
 ---
 
-- List of all QTL this marker falls within?
+- ``@todo`` List of all QTL this marker falls within?

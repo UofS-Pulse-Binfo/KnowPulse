@@ -2,6 +2,10 @@
 Stock Collection
 ================
 
+.. warning::
+
+  Not yet available as a Tripal3 content type.
+  
 Overview Pane
 --------------
 

@@ -4,6 +4,10 @@ Cultivated Variety
 
 Stored in the Chado Stock table broken out by type_id. See https://www.crop-diversity.org/mgis/accession/01BEL084245 
 
+.. warning::
+
+  Not yet available as a Tripal3 content type.
+  
 Overview
 --------
 

@@ -4,6 +4,10 @@ Genome Project
 
 The plan is to store the genome assembly as collection of analysis records (one for each program ran to create the assembly) grouped together by this project.
 
+.. warning::
+
+  Not yet available as a Tripal3 content type.
+  
 Overview
 ---------
 **Open by Default**

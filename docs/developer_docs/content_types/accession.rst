@@ -4,6 +4,10 @@ Germplasm Accession
 
 Stored in the Chado Stock table broken out by type_id.
 
+.. warning::
+
+  Not yet available as a Tripal3 content type.
+  
 Overview
 --------
 
