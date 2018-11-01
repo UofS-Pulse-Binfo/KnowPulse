@@ -83,4 +83,5 @@ Create a Clone of KP
      - ``sudo chown -R lacey-local:www-dev fresh/``
 5. Change the database in the dev/fresh/sites/default/settings.php from kp3_live to kp3_fresh. 
      - You need to use sudo to change this file.
-
+6. Change the write permission of dev/fresh/sites/default/files to be writable by all.
+     - ``sudo chmod 777 files/``
