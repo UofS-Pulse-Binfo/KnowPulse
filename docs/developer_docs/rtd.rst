@@ -13,7 +13,7 @@ For minor changes, you don't need to build the documentation!  If you want to se
 
 On Linux or MacOS, you should open your terminal and run the following command.
 
-.. code-block::bash
+.. code-block:: bash
 
   $ pip install -U sphinx
 
