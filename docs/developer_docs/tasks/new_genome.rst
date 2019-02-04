@@ -26,10 +26,6 @@ Blast
 
   > formatdb -p F -t Genus_species_version_genome -i Genus_species_version_genome.fasta -n Genus_species_version_genome -o T
  
- .. note:: 
- 
- For latest Blast version:
- 
 .. code-block:: bash
 
   > makeblastdb -dbtype 'nucl' -input_type 'fasta' -title Genus_species_version_genome -in Genus_species_version_genome.fasta -parse_seqids -hash_index
