@@ -26,9 +26,12 @@ Blast
 
   > formatdb -p F -t Genus_species_version_genome -i Genus_species_version_genome.fasta -n Genus_species_version_genome -o T
  
+ .. note:: 
+ 
  For latest Blast version:
  
 .. code-block:: bash
+
   > makeblastdb -dbtype 'nucl' -input_type 'fasta' -title Genus_species_version_genome -in Genus_species_version_genome.fasta -parse_seqids -hash_index
 
 3. Create BLAST database on KnowPulse. Go to Admin Toolbar > Content > Add Content > Blast Database. Convention for naming is ``Genus species: Genome version``.
