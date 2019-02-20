@@ -62,4 +62,5 @@ Starting Docs for a new Module
 8. Build your documentation using ``make html`` and check ``_build/html/index.html`` to ensure your documentation looks as it should.
 9. Add ``_build/`` to your ``.gitignore`` file and commit your changes pushing them out to github.
 10. Go to ``https://readthedocs.org/dashboard/`` and add this module as a project.
-
+.. note::
+  If ``Theme error: no theme named 'sphinx_rtd_theme' found (missing theme.conf?)`` is encountered by step 8. The error indicates sphinx theme package 'sphinx-rtd-theme' is not installed and it can be installed by executing command ``sudo pip install sphinx-rtd-theme`` on Linux or MacOS.
