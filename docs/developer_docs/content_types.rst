@@ -37,10 +37,10 @@ The following breaks down our content types based on the primary Chado table sto
   - Common Bean Trait (CO_335:ROOT)
   - Lentil Trait (CO_339:ROOT)
 
-- chado.featuremap (full table) 
+- chado.featuremap (full table)
 
   - Genetic Map (data onotology; Map)
-  
+
 - chado.stock_collection (full table)
 
   - Stock Collections (don't know what term to use yet)
@@ -70,4 +70,3 @@ The following breaks down our content types based on the primary Chado table sto
    content_types/cross
    content_types/ril
    content_types/stock_collection
-

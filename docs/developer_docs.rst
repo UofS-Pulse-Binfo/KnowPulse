@@ -12,4 +12,5 @@ This guide is meant for the KnowPulse team to share information and document pro
    developer_docs/content_types
    developer_docs/field_types
    developer_docs/tasks
+   developer_docs/customization
    developer_docs/rtd
