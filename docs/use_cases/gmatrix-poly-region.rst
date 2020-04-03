@@ -28,7 +28,7 @@ Step #2: Find genotypic data for your reference germplasm
 
   - For this example, Enter "ILL 8006" in the top germplasm textfield. You will notice that it autocompleted as you type.
   - Then click the green + button and enter "CDC Milestone" in the second textfield which appears.
-  
+
  - Each time you click the green + button or search, the genotypic data for the listed germplasm will be shown.
 
 .. image:: gmatrix-poly-region.1.png
@@ -50,7 +50,7 @@ Step #4: Restrict to you trait-implicated Region of the Genome.
 
 .. image:: gmatrix-poly-region.3.png
 
-Step 5: (Optionally): Restrict to specific variants.
+Step #5: (Optionally): Restrict to specific variants.
 ------------------------------------------------------
 
 - Say further analysis shows that particular sequence variants in that region are more likely to contribute to your phenotype of interest.

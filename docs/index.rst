@@ -7,13 +7,13 @@ Welcome to KnowPulse's documentation!
 =====================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Use Cases:
 
    use_cases/gmatrix-poly-region
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Group Focused:
 
    developer_docs
