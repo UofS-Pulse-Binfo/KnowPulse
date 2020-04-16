@@ -2,7 +2,7 @@
 Get a list of SNPs/variants between 2+ varieties within a region of interest.
 ===============================================================================
 
-Fictional Example:
+Example:
  - Region of interest: ``LcChr4:1875000-2075000``
  - Germplasm  of Interest: ``ILL 8006``, ``CDC Milestone``
 
