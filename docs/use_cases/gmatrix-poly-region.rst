@@ -1,16 +1,10 @@
 
-Find a variant in a trait-implicated region
-=============================================
-
-**Research Question:**
-
-Through other analysis you have a region of the genome which likely contributes to a specific phenotype for your trait of interest. Now you would like to find a causative or at least correlated sequence variant. For this purpose you know at least two germplasm with differing phenotypes which you have genotypic data available for.
+Get a list of SNPs/variants between 2+ varieties within a region of interest.
+===============================================================================
 
 Fictional Example:
- - Trait: ``Flower Colour``
  - Region of interest: ``LcChr4:1875000-2075000``
- - Germplasm with Purple Flowers: ``ILL 8006``
- - Germplasm with White Flowers: ``CDC Milestone``
+ - Germplasm  of Interest: ``ILL 8006``, ``CDC Milestone``
 
 Step #1: Go to the Lentil Genotype Matrix Tool
 ------------------------------------------------
@@ -46,14 +40,14 @@ Step #4: Restrict to you trait-implicated Region of the Genome.
 -----------------------------------------------------------------
 
 - The second section of the filter criteria available for the genotype matrix allows you to enter the region of the genome you are interested in. Once you click search, the genotype matrix will only show sequence variants found in this region.
-- In our example, the region of interest is non:150-300. To enter this we place ``LcChr4`` for the ``Sequence Name``, ``1875000`` for the start position and ``2075000`` for the end position.
+- In our example, the region of interest is LcChr4:1875000-2075000. To enter this we place ``LcChr4`` for the ``Sequence Name``, ``1875000`` for the start position and ``2075000`` for the end position.
 
 .. image:: gmatrix-poly-region.3.png
 
 Step #5: (Optionally): Restrict to specific variants.
 ------------------------------------------------------
 
-- Say further analysis shows that particular sequence variants in that region are more likely to contribute to your phenotype of interest.
+- Say you are interested in a specific set of variants and would like to see that subset.
 - You can enter the specific variant names by expanding the ``Additional Filter criteria`` section then clicking Search.
 
 .. image:: gmatrix-poly-region.4.png
